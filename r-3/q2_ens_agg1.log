@@ -1,0 +1,41 @@
+CALIBRATION: Day-2 (36/46 @41.3 -> obs 90.4) and Day-1 (30/40 @36.9 -> obs ~61-66)
+   err 6.7  crowd-centre 37  agg 0.5  conv mid    -> day2 96.4 (90.4)  day1 62.0 (~63)
+   err 6.8  crowd-centre 37  agg 0.0  conv mid    -> day2 97.0 (90.4)  day1 63.9 (~63)
+   err 7.0  crowd-centre 37  agg 0.0  conv theirs -> day2 97.1 (90.4)  day1 64.1 (~63)
+   err 7.0  crowd-centre 37  agg 0.5  conv theirs -> day2 96.4 (90.4)  day1 61.4 (~63)
+   err 7.2  crowd-centre 37  agg 0.0  conv mine   -> day2 97.6 (90.4)  day1 63.6 (~63)
+   err 7.5  crowd-centre 37  agg 1.0  conv mine   -> day2 94.8 (90.4)  day1 57.4 (~63)
+   err 7.6  crowd-centre 37  agg 0.5  conv mine   -> day2 96.5 (90.4)  day1 60.4 (~63)
+   err 8.4  crowd-centre 37  agg 1.0  conv theirs -> day2 95.0 (90.4)  day1 56.0 (~63)
+   err 8.6  crowd-centre 38  agg 0.5  conv mid    -> day2 93.8 (90.4)  day1 53.2 (~63)
+   err 8.9  crowd-centre 38  agg 0.0  conv mid    -> day2 96.1 (90.4)  day1 56.9 (~63)
+   consistent conventions among top-10: ['mid', 'mine', 'theirs']
+
+Day-3 opponent centre: crowd sees 41.3 and the trend -> centre ~ U(41,44); agg=1.0
+Q2 mine   top: [((35, 45), np.float64(70.1)), ((34, 45), np.float64(69.7)), ((33, 45), np.float64(69.6)), ((31, 45), np.float64(69.6)), ((32, 45), np.float64(69.6))]
+Q2 theirs top: [((34, 44), np.float64(71.8)), ((33, 44), np.float64(71.7)), ((30, 44), np.float64(71.6)), ((32, 44), np.float64(71.6)), ((31, 44), np.float64(71.6))]
+Q2 mid    top: [((34, 44), np.float64(69.3)), ((33, 44), np.float64(69.2)), ((32, 44), np.float64(69.2)), ((31, 44), np.float64(69.2)), ((30, 44), np.float64(69.2))]
+ROBUST avg: [((34, 44), np.float64(69.0)), ((33, 44), np.float64(68.9)), ((32, 44), np.float64(68.9)), ((31, 44), np.float64(68.9)), ((30, 44), np.float64(68.9)), ((35, 45), np.float64(67.6))]
+MAXIMIN  : [((34, 44), np.float64(66.0)), ((33, 44), np.float64(65.9)), ((32, 44), np.float64(65.9)), ((31, 44), np.float64(65.9)), ((30, 44), np.float64(65.9)), ((35, 45), np.float64(65.2))]
+
+bid sweep (offer=bid+10):
+   34/44 : mine 66.0 theirs 71.8 mid 69.3
+   35/45 : mine 70.1 theirs 65.2 mid 67.5
+   36/46 : mine 63.4 theirs 58.3 mid 60.6
+   37/47 : mine 56.0 theirs 51.4 mid 53.3
+   38/48 : mine 54.3 theirs 50.0 mid 52.0
+   39/49 : mine 58.6 theirs 55.4 mid 57.0
+   40/50 : mine 61.8 theirs 61.3 mid 61.8
+   41/51 : mine 59.3 theirs 63.8 mid 62.3
+   42/52 : mine 49.5 theirs 61.5 mid 56.1
+   43/53 : mine 36.6 theirs 54.9 mid 45.9
+   44/54 : mine 23.4 theirs 24.9 mid 23.8
+   45/55 : mine 9.1 theirs 23.0 mid 16.0
+offer sweep at bid 40:
+   40/50 : mine 61.8 theirs 61.3 mid 61.8
+   40/52 : mine 61.6 theirs 61.1 mid 61.6
+   40/55 : mine 61.5 theirs 61.1 mid 61.5
+   40/58 : mine 61.5 theirs 61.1 mid 61.5
+   40/60 : mine 61.5 theirs 61.1 mid 61.5
+   40/65 : mine 61.5 theirs 61.1 mid 61.5
+   40/70 : mine 61.5 theirs 61.1 mid 61.5
