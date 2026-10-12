@@ -31,6 +31,9 @@ Each day lives in its own folder, and each one is a self-contained set of small 
 
 Final Day-3 block (v3.2): Q1 `0/50/50`, Q2 bid 40 / offer 50, Q3 `0/0/0/25/75`, Q4 Buy ×4. The central forecast was Scissors 43.1. The writeup keeps a changelog (v1 → v3.2) and lists flip thresholds for each answer.
 
+![Scissors forecast distributions](docs/images/scissors_forecast.png)
+*Simulated campus Scissors share: the Day-1-only backtest of Day 2 against the actual 41.3 (top) and the final Day-3 ensemble forecast (bottom). Plotted from the saved `r-3/backtest_day2.npy` and `r-3/ensemble2_out.npy` outputs.*
+
 ## What I learnt
 
 - **My Day-2 model was confidently wrong, and the cause was structural.** Poisson-CH ties level-2 mass to level-1 mass, and level-2 play drags Scissors down. That one modelling choice cost me the Q3 bucket. Fitting a free mixture across two days showed level-2 was only 2-3%. Next time I'd test a model family's assumptions against the data before trusting its forecasts.
